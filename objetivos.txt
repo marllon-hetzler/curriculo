@@ -1,0 +1,4 @@
+curriculo.html
+-função imprimir curriculo
+freelancer.html
+-função de estar incluindo novos projetos pessoais

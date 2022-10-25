@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marllon A.M. Hetzler</title>
+</head>
+<style>
+    /*cor da parte do main*/
+#main{
+    background-color:black;
+}
+/*footer color*/
+/*cor do body*/
+body{
+    background-color: black;
+    text-align: center;
+}
+/*div da img*/
+.div1{
+    align-items: center;
+}
+/*imagen de capa*/
+.img{
+    width: 420px;
+    height: 320px;
+    border: 15px solid white;
+    border-radius: 450px;
+}
+.sobre{
+    color: white;
+    width: 900px;
+    height: 220px;
+    float: right;
+    display: inline-block;
+    border: 2px solid white;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*titulo*/
+h1{
+    color: white;
+    text-align: center;
+    border: 5px solid white;
+    border-radius: 30px ;
+    font-size: 40px;
+}/*icone*/
+.img2{
+    width: 70px;
+    padding: 5px;
+    background-color:rgb(177, 174, 174);
+    float: left;
+}
+
+/*lista main*/
+
+ul{
+     list-style: none;
+    height: 80px ;
+    color: black;
+    width: 200px;
+    float: left;
+}
+li{
+    background-color: rgb(177, 174, 174);
+    display: block;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0s ;
+    padding-left: 0;}
+li a{
+    color:black;
+    text-decoration: none;
+    text-align: center;
+}
+li ul{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0s ease;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: none;
+}
+li ul li{
+    clear: both;
+    text-align: center;
+}
+ul li:hover,
+ul li:focus-within{
+    background-color:rgb(255, 253, 253) ;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0s;
+    text-decoration: underline;
+}
+a:hover{
+    color:black
+}
+/*controla a exibição do dropdown lista header*/
+ul li:hover>ul,
+ul li:focus-within>ul,
+ul li ul:hover,
+ul li ul:focus{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+ol{
+    list-style: none;
+    height: 80px ;
+    color: black;
+    width: 20%;
+    display: inline-block;
+    float: left;
+}
+.li1{
+    background-color: rgb(177, 174, 174);
+    font-size: 20px;border: 2px solid white;
+    border-radius: 10px 40px 10px 40px;
+    text-align: center;
+}
+.li1 a{
+    display: inline-block;
+    color:black;
+    text-decoration: none;
+    text-align: center;
+}
+.li1 ol{
+    display: inline-block;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0s ease;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: none;
+}
+.li1 ol .li1{
+    display: inline-block;
+    clear: both;
+    text-align: center;
+}
+ol .li1:hover,
+ol .li1:focus-within{
+    display: inline-block;
+    background-color:rgb(255, 253, 253) ;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0s;
+    text-decoration: underline;
+}
+
+</style>
+
+
+<body>
+    <nav class="nav">
+        <div class="div2">
+            <img src="icone.png" class="img2">
+        </div>
+            <ul>
+                <li class="li" >Redes Sociais</a>
+            <ul>
+                <li><a href="https://www.instagram.com/_hetzler/">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/marllon-hetzler-b747aa22b/">Linkedin</a></li>
+                <li><a href="https://github.com/programadev-494">Git Hub</a></li>
+            </ul></li></ul>   
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+        </nav>
+    </header><br/>
+    <br/>
+    <br/>
+    
+
+    <main id="main">
+
+    <div class="div1">
+        <img src="WhatsApp Image 2022-10-20 at 20.30.54.jpeg" class="img">
+        <h1> <b>Marllon Antonio Machado Hetzler</b></h1><br/>
+        <br/>
+        <br/> 
+    </div>
+        <ol>
+            <li class="li1"><a href="curriculo.html">Curriculo</a></li>
+            <li class="li1"><a href="freelancers.html">Freelancers</a></li>
+            <li class="li1"><a href="certificados.html">Certificados</a></li>
+            <li class="li1"><a href="https://contate.me/hetzler">WhatsApp</a></li>
+
+        </ol>
+        <div class="sobre">
+            <p id="demo"></p>
+            
+        </div>
+
+    </main>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <footer id="footer">
+        <p>oi</p>
+        <script>
+
+            var x;
+            
+            var nome=prompt("Digite seu nome:");
+            
+            if (nome!=null)
+              {
+              x="Olá  " + nome + "! Seja bem vindo.";
+              document.getElementById("demo").innerHTML=x;
+              }
+              else{
+                x="Olá, seja muito bem vindo."
+                document.getElementById("demo").innerHTML=x;
+
+              }
+            
+            </script>
+    </footer>
+</body>
+</html>
